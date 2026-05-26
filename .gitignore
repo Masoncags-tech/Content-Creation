@@ -1,0 +1,17 @@
+.DS_Store
+node_modules/
+dist/
+renders/
+exports/
+tmp/
+*.log
+
+# Generated media can get huge. Keep source/video artifacts in external storage
+# unless a specific sample is intentionally committed.
+*.mp4
+*.mov
+*.webm
+*.wav
+*.aiff
+*.mp3
+

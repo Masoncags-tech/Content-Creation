@@ -1,0 +1,14 @@
+{
+  "name": "video-creation",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Repeatable AI-assisted short-form video creation system for Clover Digital and related brands.",
+  "scripts": {
+    "test": "node scripts/validate-repo.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+
