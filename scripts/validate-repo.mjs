@@ -9,6 +9,8 @@ const requiredFiles = [
   "docs/workflows/short-form-video.md",
   "docs/workflows/scriptwriting.md",
   "docs/workflows/tool-routing.md",
+  "docs/creative/script-lab.md",
+  "docs/creative/creative-elements.md",
   "docs/quality/qa-gates.md",
   "docs/quality/scorecard.md",
   "docs/reference/pilot-findings.md",
@@ -21,6 +23,7 @@ const requiredFiles = [
   "templates/run-log.md",
   "templates/qa-report.md",
   "examples/clover-car-ugc/run-log.md",
+  "examples/clover-car-ugc/script-options.md",
 ];
 
 function read(file) {
@@ -70,6 +73,16 @@ for (const guardrail of [
   "First frame is already active",
 ]) {
   assert.ok(prompt.includes(guardrail), `Prompt library missing guardrail: ${guardrail}`);
+}
+
+const scriptLab = read("docs/creative/script-lab.md");
+for (const phrase of ["I missed the call. Clover didn't.", "Hook Before Script", "Rewrite Ladder"]) {
+  assert.ok(scriptLab.includes(phrase), `Script lab missing: ${phrase}`);
+}
+
+const creativeElements = read("docs/creative/creative-elements.md");
+for (const phrase of ["Physical Hooks", "Proof Inserts", "The mascot works when it has a job"]) {
+  assert.ok(creativeElements.includes(phrase), `Creative elements missing: ${phrase}`);
 }
 
 const filesWithBadClaims = requiredFiles.filter((file) => {
