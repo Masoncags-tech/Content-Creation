@@ -22,11 +22,14 @@
 - Physical hook:
 - Product/workflow proof:
 - Payoff line:
+- Why this moment happens now:
 
 ## Constraints
 
 - Claims to avoid:
 - Text/UI risk:
+- Props that must appear:
+- Props that must not appear:
 - Brand notes:
 - Safety/IP notes:
 
@@ -37,4 +40,3 @@
 - Audio:
 - Defect bar:
 - Score target:
-

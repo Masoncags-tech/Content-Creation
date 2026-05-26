@@ -15,6 +15,8 @@ A clip is not audience-ready until it clears these gates.
 - Lighting and camera language stay consistent.
 - The set does not reset between shots.
 - The performer has a clear reason to speak.
+- The exact moment would still make sense if no camera were present.
+- Every visible prop has a source, action, reason, and destination.
 
 ## Gate 3: Transition Logic
 
@@ -43,6 +45,8 @@ Fail the clip if it has:
 - fake logos
 - bad end-card spelling
 - UI that looks generated instead of designed
+- invented apps, fake app grids, or fake calendar/dashboard screens
+- props that appear without setup
 
 ## Gate 6: Brand/Claims
 
@@ -63,4 +67,3 @@ The viewer should be able to say one of:
 - "That line is funny."
 
 If the only reason to watch is that it was made with AI, it fails.
-

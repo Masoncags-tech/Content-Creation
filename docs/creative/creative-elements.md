@@ -2,6 +2,8 @@
 
 Use this as the menu before writing prompts.
 
+These are reusable patterns and examples, not fixed creative mandates. Load the pattern, then adapt the setting, prop, and proof method to the venture.
+
 ## Physical Hooks
 
 | Hook | Best format | Risk |
@@ -84,4 +86,3 @@ Bad mascot roles:
 - floating explainer icon
 - random caption narrator
 - substitute for the whole scene
-

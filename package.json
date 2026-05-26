@@ -5,10 +5,10 @@
   "type": "module",
   "description": "Repeatable AI-assisted short-form video creation system for Clover Digital and related brands.",
   "scripts": {
-    "test": "node scripts/validate-repo.mjs"
+    "test": "node scripts/validate-repo.mjs && node scripts/lint-scene-contract.mjs templates/scene-design-prompt.md examples/prompt-max-service-ugc/scene-design-prompt.md",
+    "lint:scene": "node scripts/lint-scene-contract.mjs"
   },
   "engines": {
     "node": ">=20"
   }
 }
-
