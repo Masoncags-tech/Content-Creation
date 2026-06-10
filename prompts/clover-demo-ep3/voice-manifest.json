@@ -1,0 +1,9 @@
+[
+  {"id": "01-hermes-status",    "voice_id": "EXAVITQu4vr4xnSDxMaL", "text": "Demo's in five minutes. Status.", "stability": 0.5, "style": 0.35},
+  {"id": "02-bighoss-fire",     "voice_id": "N2lVS1w4EtoT3dr4eOWO", "text": "Build's on fire.", "stability": 0.45, "style": 0.4},
+  {"id": "03-codex-correction", "voice_id": "cgSgspJ2msm6clMCkdW9", "text": "Correction. The fire is on fire.", "stability": 0.35, "style": 0.6},
+  {"id": "04-derek-stall",      "voice_id": "TX3LPaxmHKxFdv7VOQHJ", "text": "I'll stall them!", "stability": 0.3, "style": 0.6},
+  {"id": "05-hermes-calm",      "voice_id": "EXAVITQu4vr4xnSDxMaL", "text": "Why are you calm.", "stability": 0.55, "style": 0.3},
+  {"id": "06-tinyclover-reveal","voice_id": "FGY2WhTYpPnrIDTdsKH5", "text": "The demo was an hour ago. Clover ran it.", "stability": 0.4, "style": 0.5},
+  {"id": "07-tinyclover-signed","voice_id": "FGY2WhTYpPnrIDTdsKH5", "text": "They signed.", "stability": 0.35, "style": 0.55}
+]

@@ -24,6 +24,12 @@ The Clover mascot is still useful IP, especially for recurring character/show co
 8. Score with a predictor when available, but do not let the metric override obvious quality.
 9. Save the run log, prompt, result IDs, contact sheet, and next change.
 
+**Baseline as of 2026-06-09:** multi-shot videos are ONE Seedance generation with cuts
+directed in-prompt + one continuous audio bed — never stitched clips. Structure-test at
+480p fast before any 1080p commit; that draft ladder replaces blind variant counts for
+multi-shot work. Full process: `docs/workflows/single-gen-production.md`. Tested prompt
+grammar: `prompts/seedance-prompt-blocks.md`.
+
 ## Repo Map
 
 - `docs/workflows/` - repeatable production workflows.
