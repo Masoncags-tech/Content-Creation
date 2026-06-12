@@ -102,3 +102,49 @@ motion-continuous, judge it as a choice, not a defect.
 - Leave wordless gaps deliberately — Seedance fills them with scene-true SFX and room tone.
 - The bed survives verbatim for cartoon casts; for humans, only with the dialogue lock.
 - Verify with whisper verbose transcription on EVERY roll, draft included.
+
+## Performed-voice extraction (when TTS sounds like a dub)
+
+TTS reads lines; sync-sound is performed in the room — when a client says the voice "sounds
+generated," this is usually the gap. Recipe (proven on `clover-wywo`):
+
+1. Roll a 480p draft with NO audio bed; quote the lines in the prompt with voice direction
+   ("natural tired-but-warm real human morning voice, performed live in the room, natural
+   breaths, slightly imperfect delivery"). Seedance performs them.
+2. whisper word-timestamps → cut each line from the draft's audio (pad ~0.15s).
+3. ElevenLabs `/v1/audio-isolation` to strip baked SFX (min 4.6s input — isolate the whole
+   dialogue region in one call, then cut).
+4. Rebuild the deterministic bed at the model's OWN native line timing (it edits well).
+5. Re-roll with the bed + DIALOGUE LOCK. The model lip-syncs its own performance.
+
+The extracted lines become the character's reusable voice (clone via ElevenLabs IVC for
+future episodes).
+
+## Solid props, one character (anti-ghost)
+
+"It EXPANDS into a floating card" invites scale hallucinations (giant translucent ghost
+mascot, duplicated props). Direct prop physics tactilely and close with the rule:
+
+> [character] GRABS the small [tile] and SETS IT DOWN on the desk — where it becomes a small
+> SOLID [prop], physical and opaque... STRICT SCALE AND SOLIDITY: every prop stays small and
+> physical; NO translucent overlays, NO giant projections, NO holograms, NO ghost copies or
+> duplicates of [character] — there is exactly ONE [character], [size], at all times.
+
+For prop faces that attract pseudo-text (calendars, receipts, labels): "PURE BLANK WHITE
+face — no grid, no dots, no marks of any kind" — and zoom-QA the 1080p anyway.
+
+## State continuity across a time jump
+
+A state that must persist (sleeping character, dead screen, tidy desk) gets all three:
+the state, its start, and its negation: "already curled up FAST ASLEEP from the moment the
+sunrise begins — STAYS asleep for the entire rest of the video, never stands, never wakes;
+his ONLY movement is the final sleepy arm-reach." Screens: "DARK and OFF — no glow, no
+interface — until its single soft ding."
+
+## Engine routing (hybrid mascot lane)
+
+- `seedance_2_0`: the hybrid workhorse. Holds the mascot design, obeys the dialogue lock,
+  has the 1.5cr/s draft tier.
+- `marketing_studio_video`: strong photoreal humans + native voice, but CANNOT hold a
+  cartoon character design (melted-toy mascot), ad-libs beyond the script, no real draft
+  tier (480p=52.5, 1080p=150 flat). Pure-human ad variants only.
